@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+  <style>
+    .registration-box {
+      background-color: lightyellow;
+      padding: 20px;
+      width: 400px;
+      margin: 50px auto;
+      border-radius: 10px;
+    }
+
+    .heading {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    .checkbox-label {
+      display: flex;
+      align-items: center;
+    }
+
+    .submit-button {
+      background-color: red;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .submit-button:hover {
+      background-color: darkred;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="registration-box">
+    <h2 class="heading">Registration number</h2>
+
+    <div class="form-group">
+      <label for="firstName">First Name:</label>
+      <input type="text" id="firstName">
+    </div>
+
+    <div class="form-group">
+      <label for="lastName">Last Name:</label>
+      <input type="text" id="lastName">
+    </div>
+
+    <div class="form-group">
+      <label for="email">E-mail:</label>
+      <input type="email" id="email">
+    </div>
+
+    <div class="form-group">
+      <label for="password">Password:</label>
+      <input type="password" id="password">
+    </div>
+
+    <div class="form-group">
+      <label for="reenterPassword">Re-enter Password:</label>
+      <input type="password" id="reenterPassword">
+    </div>
+
+    <div class="form-group">
+      <label>Gender:</label>
+      <input type="radio" id="male" name="gender">
+      <label for="male">Male</label>
+      <input type="radio" id="female" name="gender">
+      <label for="female">Female</label>
+    </div>
+
+    <div class="form-group">
+      <label for="age">Age:</label>
+      <input type="number" id="age">
+    </div>
+
+    <div class="form-group">
+      <label for="phoneNumber">Phone Number:</label>
+      <input type="tel" id="phoneNumber">
+    </div>
+
+    <div class="form-group">
+      <label for="address">Address:</label>
+      <textarea id="address"></textarea>
+    </div>
+
+    <div class="form-group">
+      <label for="state">State:</label>
+      <input type="text" id="state">
+    </div>
+
+    <div class="form-group">
+      <label for="country">Country:</label>
+      <select id="country">
+        <option value="India">India</option>
+        <option value="Russia">Russia</option>
+        <option value="China">China</option>
+        <option value="Japan">Japan</option>
+        <option value="USA">USA</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label>Languages:</label>
+      <input type="checkbox" id="english">
+      <label for="english">English</label>
+      <input type="checkbox" id="kannada">
+      <label for="kannada">Kannada</label>
+      <input type="checkbox" id="hindi">
+      <label for="hindi">Hindi</label>
+      <input type="checkbox" id="telugu">
+      <label for="telugu">Telugu</label>
+    </div>
+
+    <div class="form-group">
+      <label class="checkbox-label">
+        <input type="checkbox" id="declaration">
+        Hereby I declare all the given details are true
+      </label>
+    </div>
+
+    <div style="text-align: right;">
+      <p>Log in to Ethnus website</p>
+    </div>
+
+    <button class="submit-button">Register</button>
+  </div>
+</body>
+
+</html>
+
