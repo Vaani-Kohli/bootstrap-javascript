@@ -1,0 +1,8 @@
+console.log("Write a JavaScript function that reverses a number.");
+console.log("Sample data and Output");
+console.log("Example x = 32243;");
+console.log("Expected output : " + reverseNumber(32243));
+
+function reverseNumber(number) {
+  return parseInt(number.toString().split('').reverse().join(''));
+}
