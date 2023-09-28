@@ -1,0 +1,8 @@
+document.write("Write a JavaScript function that reverses a number.");
+document.write("<ul style='list-style-type: circle;'>");
+document.write("<li>Sample data and Output");
+document.write("<ul style='list-style-type: none;'>");
+document.write("<li>Example x = 32243;</li>");
+document.write("<li>Expected output: 34223</li>");
+document.write("</ul></li>");
+document.write("</ul>");
