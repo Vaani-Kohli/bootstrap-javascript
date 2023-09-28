@@ -1,0 +1,78 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ethnus Layout</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    .top-strip {
+      background-color: lightblue;
+      height: 5cm;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: black;
+    }
+
+    .grey-strip {
+      background-color: grey;
+      height: 5cm;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 1cm;
+      color: white;
+    }
+
+    .dark-strip {
+      background-color: darkgrey;
+      height: 10cm;
+    }
+
+    .content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: calc(100vh - 20cm); /* Adjust the height based on your requirements */
+      color: white;
+      font-size: 24px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12 top-strip">
+        <h1>Ethnus Layout</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 grey-strip">
+        <div>
+          Home | Menu | About | Contact
+        </div>
+        <div>
+          Signup | Login
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-2 dark-strip">
+        <div>
+          This is
+        </div>
+      </div>
+      <div class="col-10 content">
+        Write your content here
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
