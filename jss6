@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instagram Login</title>
+  <style>
+    .login-box {
+      width: 300px;
+      margin: 100px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .heading {
+      font-style: italic;
+      text-align: center;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    .form-group input {
+      width: 100%;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+
+    .login-button {
+      width: 100%;
+      padding: 10px;
+      background-color: blue;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    .login-button:hover {
+      background-color: #0033aa;
+    }
+
+    .checkbox {
+      display: inline-block;
+      margin-right: 10px;
+    }
+
+    .forgot-password {
+      float: right;
+      color: blue;
+    }
+
+    .register-link {
+      text-align: center;
+      margin-top: 20px;
+      color: blue;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="login-box">
+    <h2 class="heading">Instagram</h2>
+    <div class="form-group">
+      <input type="text" placeholder="Username">
+    </div>
+    <div class="form-group">
+      <input type="password" placeholder="Password">
+    </div>
+    <button class="login-button">Log in</button>
+    <div class="form-group">
+      <input type="checkbox" class="checkbox" id="rememberMe">
+      <label for="rememberMe">Remember me</label>
+      <a href="#" class="forgot-password">Forgot password?</a>
+    </div>
+  </div>
+
+  <div class="register-link">Don't have an account! <span style="font-weight: bold;">Sign in?</span></div>
+</body>
+
+</html>
