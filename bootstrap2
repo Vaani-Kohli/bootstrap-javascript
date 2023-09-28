@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Layout</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    .container {
+      background-color: white;
+      border-top: 1px solid black;
+      padding-top: 10px;
+    }
+
+    .main-box {
+      width: 5cm;
+      height: 15cm;
+      background-color: white;
+      border: 1px solid white;
+      border-radius: 5px;
+      box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+      margin-right: 10px;
+      position: relative; /* Position relative to allow absolute positioning for the inner elements */
+    }
+
+    .light-blue-box {
+      width: 5cm;
+      height: 5cm;
+      background-color: lightblue;
+      position: absolute;
+      top: 0; /* Align to the top inside the main box */
+      left: 0; /* Align to the left inside the main box */
+    }
+
+    .text-box {
+      padding: 10px;
+      position: absolute;
+      top: 5cm; /* Align just below the light blue box */
+      left: 0; /* Align to the left inside the main box */
+      width: 100%;
+      text-align: center;
+    }
+
+    .yellow-line {
+      position: absolute;
+      top: 10cm; /* Align below the text */
+      left: 0; /* Align to the left inside the main box */
+      width: 100%;
+      border-top: 1px solid yellow; /* Yellow line */
+    }
+
+    .link-text {
+      position: absolute;
+      top: 10.5cm; /* Align below the yellow line */
+      left: 0; /* Align to the left inside the main box */
+      width: 100%;
+      text-align: center;
+      color: yellow; /* Yellow color for the link text */
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-3">
+        <div class="main-box">
+          <div class="light-blue-box"></div>
+          <div class="text-box">
+            Cards for display in portfolio style material design by Google.
+          </div>
+          <div class="yellow-line"></div>
+          <div class="link-text">Link</div>
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="main-box">
+          <div class="light-blue-box"></div>
+          <div class="text-box">
+            Cards for display in portfolio style material design by Google.
+          </div>
+          <div class="yellow-line"></div>
+          <div class="link-text">Link</div>
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="main-box">
+          <div class="light-blue-box"></div>
+          <div class="text-box">
+            Cards for display in portfolio style material design by Google.
+          </div>
+          <div class="yellow-line"></div>
+          <div class="link-text">Link</div>
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="main-box">
+          <div class="light-blue-box"></div>
+          <div class="text-box">
+            Cards for display in portfolio style material design by Google.
+          </div>
+          <div class="yellow-line"></div>
+          <div class="link-text">Link</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
