@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Form</title>
+  <style>
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .error-message {
+      color: red;
+    }
+  </style>
+</head>
+
+<body>
+  <h2>Contact Form</h2>
+  <form onsubmit="return validateForm()">
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input type="text" id="name" placeholder="Enter your name">
+      <div id="name-error" class="error-message"></div>
+    </div>
+
+    <div class="form-group">
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" placeholder="Enter your e-mail">
+      <div id="email-error" class="error-message"></div>
+    </div>
+
+    <div class="form-group">
+      <label for="website">Website:</label>
+      <input type="text" id="website" placeholder="Enter your website">
+      <div id="website-error" class="error-message"></div>
+    </div>
+
+    <div class="form-group">
+      <label for="message">Message:</label>
+      <textarea id="message" placeholder="Enter your message"></textarea>
+      <div id="message-error" class="error-message"></div>
+    </div>
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <script>
+    function validateForm() {
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const website = document.getElementById('website').value;
+      const message = document.getElementById('message').value;
+
+      const nameError = document.getElementById('name-error');
+      const emailError = document.getElementById('email-error');
+      const websiteError = document.getElementById('website-error');
+      const messageError = document.getElementById('message-error');
+
+      nameError.innerText = !name ? 'This field is required' : '';
+      emailError.innerText = !email ? 'This field is required' : '';
+      websiteError.innerText = !website ? 'This field is required' : '';
+      messageError.innerText = !message ? 'This field is required' : '';
+
+      return !(!name || !email || !website || !message);
+    }
+  </script>
+</body>
+
+</html>
